@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/zakstam/voltagent-convex/compare/v1.1.3...v1.1.4) (2026-01-18)
+
+
+### Bug Fixes
+
+* update paths for TypeScript definitions and module exports in package.json ([b9823c4](https://github.com/zakstam/voltagent-convex/commit/b9823c47281332753fa3263f7f928445a2d742a5))
+
 ## [1.1.3](https://github.com/zakstam/voltagent-convex/compare/v1.1.2...v1.1.3) (2026-01-18)
 
 
