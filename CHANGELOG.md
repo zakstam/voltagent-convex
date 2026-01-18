@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/zakstam/voltagent-convex/compare/v1.1.4...v1.1.5) (2026-01-18)
+
+
+### Bug Fixes
+
+* introduce a minimal interface for VoltAgentComponent to optimize type instantiation and re-export ComponentApi for better type access ([70cbf6d](https://github.com/zakstam/voltagent-convex/commit/70cbf6d214a2fc1cde58686f854261d342f3b7fc))
+
 ## [1.1.4](https://github.com/zakstam/voltagent-convex/compare/v1.1.3...v1.1.4) (2026-01-18)
 
 
