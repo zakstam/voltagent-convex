@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/zakstam/voltagent-convex/compare/v1.1.2...v1.1.3) (2026-01-18)
+
+
+### Bug Fixes
+
+* update TypeScript configuration and dependencies, remove tsup config, and simplify component types ([b022365](https://github.com/zakstam/voltagent-convex/commit/b0223659629858682ee758da5119ed82ae49c492))
+
 ## [1.1.2](https://github.com/zakstam/voltagent-convex/compare/v1.1.1...v1.1.2) (2026-01-18)
 
 
