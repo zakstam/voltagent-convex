@@ -3,13 +3,13 @@
   "description": "VoltAgent Convex - Convex storage adapter component for VoltAgent",
   "version": "1.1.2",
   "type": "module",
-  "types": "./dist/client/index.d.ts",
-  "module": "./dist/client/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./dist/client/index.d.ts",
-      "default": "./dist/client/index.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./api": {
       "types": "./dist/client/index.d.ts",
