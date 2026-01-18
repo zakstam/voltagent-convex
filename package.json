@@ -76,6 +76,9 @@
     "component"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "bugs": {
     "url": "https://github.com/zakstam/voltagent-convex/issues"
