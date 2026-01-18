@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/zakstam/voltagent-convex/compare/v1.0.0...v1.1.0) (2026-01-18)
+
+
+### Features
+
+* initial release of VoltAgent Convex storage adapter ([2960b11](https://github.com/zakstam/voltagent-convex/commit/2960b117e9233f1f25f83824466b55fd61d85dc2))
+
 # 1.0.0 (2026-01-18)
 
 
