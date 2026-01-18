@@ -1,4 +1,4 @@
-# @zakstam/voltagent-convex
+# @o-zakstam/voltagent-convex
 
 Convex Storage Adapter for [VoltAgent](https://voltagent.dev) - A StorageAdapter implementation that persists conversation history, working memory, and workflow state to a [Convex](https://convex.dev) database using Convex Components.
 
@@ -16,11 +16,11 @@ Convex Storage Adapter for [VoltAgent](https://voltagent.dev) - A StorageAdapter
 ## Installation
 
 ```bash
-npm install @zakstam/voltagent-convex convex
+npm install @o-zakstam/voltagent-convex convex
 # or
-pnpm add @zakstam/voltagent-convex convex
+pnpm add @o-zakstam/voltagent-convex convex
 # or
-yarn add @zakstam/voltagent-convex convex
+yarn add @o-zakstam/voltagent-convex convex
 ```
 
 ## Quick Start
@@ -31,7 +31,7 @@ In your `convex/convex.config.ts`, import and install the VoltAgent component:
 
 ```typescript
 import { defineApp } from "convex/server";
-import voltagent from "@zakstam/voltagent-convex/convex.config";
+import voltagent from "@o-zakstam/voltagent-convex/convex.config";
 
 const app = defineApp();
 app.use(voltagent);
@@ -45,7 +45,7 @@ Create a `convex/voltagent.ts` file that generates the public API functions:
 
 ```typescript
 import { components } from "./_generated/api";
-import { defineVoltAgentAPI } from "@zakstam/voltagent-convex/api";
+import { defineVoltAgentAPI } from "@o-zakstam/voltagent-convex/api";
 
 export const {
   createConversation,
@@ -87,7 +87,7 @@ This will generate the component types in your `convex/_generated/` directory.
 ```typescript
 import { Agent, Memory, VoltAgent } from "@voltagent/core";
 import { ConvexHttpClient } from "convex/browser";
-import { ConvexMemoryAdapter } from "@zakstam/voltagent-convex";
+import { ConvexMemoryAdapter } from "@o-zakstam/voltagent-convex";
 import { api } from "./convex/_generated/api";
 import { openai } from "@ai-sdk/openai";
 
@@ -195,7 +195,7 @@ With Convex React, you can use the `ConvexReactClient`:
 
 ```typescript
 import { useConvex } from "convex/react";
-import { ConvexMemoryAdapter } from "@zakstam/voltagent-convex";
+import { ConvexMemoryAdapter } from "@o-zakstam/voltagent-convex";
 import { api } from "./convex/_generated/api";
 
 function useMemoryAdapter() {
@@ -221,7 +221,7 @@ The `OperationContext` parameter is accepted by all methods for interface compat
 If you need these features, you can extend `ConvexMemoryAdapter` and override the relevant methods to implement custom context handling:
 
 ```typescript
-import { ConvexMemoryAdapter } from "@zakstam/voltagent-convex";
+import { ConvexMemoryAdapter } from "@o-zakstam/voltagent-convex";
 import type { OperationContext } from "@voltagent/core";
 
 class CustomConvexMemoryAdapter extends ConvexMemoryAdapter {

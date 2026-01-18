@@ -1,5 +1,5 @@
 {
-  "name": "@zakstam/voltagent-convex",
+  "name": "@o-zakstam/voltagent-convex",
   "description": "VoltAgent Convex - Convex storage adapter component for VoltAgent",
   "version": "1.0.0",
   "type": "module",
