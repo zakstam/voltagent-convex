@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+submodules
+
+# Nextjs
+.next
+
+# Build output
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# AI
+.mcp.json
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# Convex
+.convex/
+
+# Package manager locks (keep only one)
+# yarn.lock
+# pnpm-lock.yaml

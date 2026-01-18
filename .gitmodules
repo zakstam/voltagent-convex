@@ -1,0 +1,6 @@
+[submodule "submodules/voltagent"]
+	path = submodules/voltagent
+	url = https://github.com/VoltAgent/voltagent.git
+[submodule "submodules/agent"]
+	path = submodules/agent
+	url = https://github.com/get-convex/agent.git

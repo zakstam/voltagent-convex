@@ -1,0 +1,32 @@
+{
+  "name": "voltagent-convex-example",
+  "description": "Example of VoltAgent with Convex memory storage - Next.js chat app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "convex:dev": "convex dev"
+  },
+  "dependencies": {
+    "@ai-sdk/react": "^3.0.41",
+    "@openrouter/ai-sdk-provider": "^1.5.4",
+    "@voltagent/convex": "file:..",
+    "@voltagent/core": "^2.1.2",
+    "ai": "^6.0.39",
+    "convex": "^1.31.5",
+    "next": "^16.1.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.9",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  }
+}
