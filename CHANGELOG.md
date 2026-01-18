@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/zakstam/voltagent-convex/compare/v1.1.5...v1.1.6) (2026-01-18)
+
+
+### Bug Fixes
+
+* update package dependencies and imports to use the new @o-zakstam/voltagent-convex package, improving type handling and module resolution ([651ab46](https://github.com/zakstam/voltagent-convex/commit/651ab46e8cf7f434e65fc94389eb8645a1ad0daf))
+
 ## [1.1.5](https://github.com/zakstam/voltagent-convex/compare/v1.1.4...v1.1.5) (2026-01-18)
 
 
