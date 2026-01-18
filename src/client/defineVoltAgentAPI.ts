@@ -24,7 +24,42 @@ import {
   type ApiFromModules,
 } from "convex/server";
 import { v } from "convex/values";
-import type { VoltAgentComponent } from "./types.js";
+
+// Use a minimal interface that matches the component structure
+// This avoids deep type instantiation when combined with other Convex components
+interface VoltAgentComponentLike {
+  conversations: {
+    create: any;
+    get: any;
+    getByResourceId: any;
+    getByUserId: any;
+    queryConversations: any;
+    update: any;
+    remove: any;
+  };
+  messages: {
+    add: any;
+    addMany: any;
+    get: any;
+    clear: any;
+  };
+  steps: {
+    save: any;
+    get: any;
+  };
+  workingMemory: {
+    get: any;
+    set: any;
+    remove: any;
+  };
+  workflows: {
+    get: any;
+    getSuspended: any;
+    queryRuns: any;
+    set: any;
+    update: any;
+  };
+}
 
 /**
  * Define the VoltAgent API functions.
@@ -32,7 +67,9 @@ import type { VoltAgentComponent } from "./types.js";
  * @param component - The VoltAgent component reference (components.voltagent)
  * @returns An object containing all VoltAgent API functions
  */
-export function defineVoltAgentAPI(component: VoltAgentComponent) {
+export function defineVoltAgentAPI<T extends VoltAgentComponentLike>(
+  component: T,
+) {
   // ============================================================================
   // Conversation Functions
   // ============================================================================

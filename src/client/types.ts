@@ -5,10 +5,5 @@
  * allowing type-safe access to component functions.
  */
 
-import type { ComponentApi } from "../component/_generated/component.js";
-
-/**
- * The VoltAgent Component API type.
- * This matches the structure of `components.voltagent` after installing the component.
- */
-export type VoltAgentComponent = ComponentApi;
+// Re-export ComponentApi for users who want the full type
+export type { ComponentApi as VoltAgentComponent } from "../component/_generated/component.js";
