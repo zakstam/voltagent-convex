@@ -5,7 +5,7 @@
  * This makes the functions available via api.voltagent.*
  */
 import { components } from "./_generated/api";
-import { defineVoltAgentAPI } from "@voltagent/convex/api";
+import { defineVoltAgentAPI } from "@o-zakstam/voltagent-convex/api";
 
 export const {
   // Conversations

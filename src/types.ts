@@ -26,31 +26,13 @@ export interface ConvexClient {
 
 /**
  * The VoltAgent API structure.
- * This matches the wrapper functions exported from the convex/api.ts file.
+ *
+ * This type is intentionally loose (using `any`) to avoid TypeScript's
+ * "excessively deep type instantiation" error when users pass in
+ * Convex-generated API types that have deeply nested FunctionReference types.
  */
-export interface VoltAgentApi {
-  createConversation: unknown;
-  getConversation: unknown;
-  getConversations: unknown;
-  getConversationsByUserId: unknown;
-  queryConversations: unknown;
-  updateConversation: unknown;
-  deleteConversation: unknown;
-  addMessage: unknown;
-  addMessages: unknown;
-  getMessages: unknown;
-  clearMessages: unknown;
-  saveConversationSteps: unknown;
-  getConversationSteps: unknown;
-  getWorkingMemory: unknown;
-  setWorkingMemory: unknown;
-  deleteWorkingMemory: unknown;
-  getWorkflowState: unknown;
-  queryWorkflowRuns: unknown;
-  setWorkflowState: unknown;
-  updateWorkflowState: unknown;
-  getSuspendedWorkflowStates: unknown;
-}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type VoltAgentApi = any;
 
 /**
  * Configuration options for ConvexMemoryAdapter

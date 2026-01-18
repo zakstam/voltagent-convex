@@ -46,11 +46,13 @@ export function Chat() {
 
   // Merge persisted messages with streaming response
   const displayMessages = useMemo((): DisplayMessage[] => {
-    const persisted: DisplayMessage[] = (convexMessages || []).map((m) => ({
-      id: m.id,
-      role: m.role,
-      parts: m.parts as MessagePart[],
-    }));
+    const persisted: DisplayMessage[] = (convexMessages || []).map(
+      (m: { id: string; role: string; parts: MessagePart[] }) => ({
+        id: m.id,
+        role: m.role,
+        parts: m.parts as MessagePart[],
+      }),
+    );
 
     // If streaming, show the current streaming assistant message
     if (isStreaming && streamingMessages.length > 0) {

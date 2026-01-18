@@ -1,7 +1,7 @@
 import { createOpenRouter } from "@openrouter/ai-sdk-provider";
 import { Agent, Memory } from "@voltagent/core";
 import { ConvexHttpClient } from "convex/browser";
-import { ConvexMemoryAdapter } from "@voltagent/convex";
+import { ConvexMemoryAdapter } from "@o-zakstam/voltagent-convex";
 import { api } from "../convex/_generated/api";
 
 // Lazy initialization to avoid build-time errors

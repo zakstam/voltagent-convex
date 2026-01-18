@@ -4,7 +4,7 @@
  * This file configures the VoltAgent component for your Convex app.
  */
 import { defineApp } from "convex/server";
-import voltagent from "@voltagent/convex/convex.config";
+import voltagent from "@o-zakstam/voltagent-convex/convex.config";
 
 const app = defineApp();
 

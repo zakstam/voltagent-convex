@@ -12,7 +12,7 @@
   "dependencies": {
     "@ai-sdk/react": "^3.0.41",
     "@openrouter/ai-sdk-provider": "^1.5.4",
-    "@voltagent/convex": "file:..",
+    "@o-zakstam/voltagent-convex": "^1.1.5",
     "@voltagent/core": "^2.1.2",
     "ai": "^6.0.39",
     "convex": "^1.31.5",
