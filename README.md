@@ -287,4 +287,4 @@ MIT
 - [VoltAgent Documentation](https://voltagent.dev/docs/)
 - [Convex Documentation](https://docs.convex.dev/)
 - [Convex Components Documentation](https://docs.convex.dev/components)
-- [GitHub Repository](https://github.com/VoltAgent/voltagent-convex)
+- [GitHub Repository](https://github.com/zakstam/voltagent-convex)
