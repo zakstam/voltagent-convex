@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/zakstam/voltagent-convex/compare/v1.1.0...v1.1.1) (2026-01-18)
+
+
+### Bug Fixes
+
+* set publishConfig access to public ([142444f](https://github.com/zakstam/voltagent-convex/commit/142444f06fd0ddcdc38b008726dd266719a64519))
+
 # [1.1.0](https://github.com/zakstam/voltagent-convex/compare/v1.0.0...v1.1.0) (2026-01-18)
 
 
