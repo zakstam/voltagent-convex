@@ -3,44 +3,43 @@
   "description": "VoltAgent Convex - Convex storage adapter component for VoltAgent",
   "version": "1.1.1",
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/client/index.d.ts",
+  "module": "./dist/client/index.js",
   "exports": {
+    "./package.json": "./package.json",
     ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
+      "types": "./dist/client/index.d.ts",
+      "default": "./dist/client/index.js"
     },
     "./api": {
-      "import": {
-        "types": "./dist/client/index.d.ts",
-        "default": "./dist/client/index.js"
-      },
-      "require": {
-        "types": "./dist/client/index.d.cts",
-        "default": "./dist/client/index.cjs"
-      }
+      "types": "./dist/client/index.d.ts",
+      "default": "./dist/client/index.js"
     },
-    "./convex.config": "./convex/convex.config.ts"
+    "./_generated/component.js": {
+      "types": "./dist/component/_generated/component.d.ts"
+    },
+    "./convex.config": {
+      "types": "./dist/component/convex.config.d.ts",
+      "default": "./dist/component/convex.config.js"
+    },
+    "./convex.config.js": {
+      "types": "./dist/component/convex.config.d.ts",
+      "default": "./dist/component/convex.config.js"
+    }
   },
   "files": [
     "dist",
-    "convex"
+    "src"
   ],
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "clean": "rm -rf dist *.tsbuildinfo",
+    "build": "tsc --project ./tsconfig.build.json",
+    "dev:build": "chokidar 'tsconfig*.json' 'src/**/*.ts' -i '**/*.test.ts' -c 'convex codegen --component-dir ./src/component && npm run build' --initial",
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
     "test": "vitest --reporter=hanging-process --reporter=default --typecheck",
     "test:coverage": "vitest run --coverage --typecheck",
-    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "release": "semantic-release"
   },
   "devDependencies": {
@@ -51,9 +50,9 @@
     "@voltagent/core": "^2.0.2",
     "@voltagent/logger": "^2.0.2",
     "ai": "^6.0.0",
+    "chokidar-cli": "^3.0.0",
     "convex": "^1.21.0",
     "semantic-release": "^25.0.2",
-    "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^3.2.4"
   },

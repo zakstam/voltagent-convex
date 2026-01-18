@@ -7,6 +7,7 @@ submodules
 
 # Build output
 dist/
+*.tsbuildinfo
 
 # IDE
 .idea/
