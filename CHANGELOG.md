@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/zakstam/voltagent-convex/compare/v1.1.1...v1.1.2) (2026-01-18)
+
+
+### Bug Fixes
+
+* simplify component types to prevent TypeScript depth errors ([a91846c](https://github.com/zakstam/voltagent-convex/commit/a91846ccce43138b485f7c884c25b170e854e847))
+
 ## [1.1.1](https://github.com/zakstam/voltagent-convex/compare/v1.1.0...v1.1.1) (2026-01-18)
 
 
